@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate - Find Your Dream Home</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="top-bar">
+            <!-- Optional top bar for contact info if needed based on design -->
+        </div>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-building"></i>
+                <div class="logo-text">
+                    <span>ESTATE</span>
+                    <span class="logo-sub">REAL ESTATE GUIDE</span>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active">HOME</a></li>
+                    <li><a href="#">FEATURES</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">LISTING</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACTS</a></li>
+                </ul>
+            </nav>
+            <div class="contact-number">
+                CALL US: <strong>800 123 45 67</strong>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-bg-overlay"></div>
+            <div class="container hero-content">
+                <div class="hero-text-wrapper">
+                    <!-- Placeholder for Hero Image if needed or background image logic in CSS -->
+                    <h1>87 Mishaum Point Rd</h1>
+                    <p class="hero-subtitle">Dartmouth, MA 02748</p>
+                    <div class="house-price-box">
+                        <span class="currency">$</span>1,249,000
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Filter Section -->
+        <section class="search-filter-section">
+            <div class="container">
+                <form class="search-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select>
+                                <option>Property Status</option>
+                                <option>For Sale</option>
+                                <option>For Rent</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select>
+                                <option>Property Location</option>
+                                <option>New York</option>
+                                <option>Los Angeles</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select>
+                                <option>Property Type</option>
+                                <option>Apartment</option>
+                                <option>House</option>
+                                <option>Villa</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select>
+                                <option>Property Style</option>
+                                <option>Modern</option>
+                                <option>Classic</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select>
+                                <option>Bedrooms</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select>
+                                <option>Bathrooms</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3+</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row bottom-row">
+                        <div class="cluster-group">
+                            <div class="slider-group">
+                                <div class="slider-label"><span>Area</span> <span>Any</span></div>
+                                <input type="range" class="range-slider" min="0" max="1000" value="0">
+                            </div>
+                            <div class="slider-group">
+                                <div class="slider-label"><span>Price</span> <span>Any</span></div>
+                                <input type="range" class="range-slider" min="0" max="1000000" value="0">
+                            </div>
+                        </div>
+                        <button type="submit" class="search-btn">SEARCH</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Featured Property Section -->
+        <section class="featured-property-section">
+            <div class="container">
+                <div class="featured-wrapper">
+                    <div class="featured-text">
+                        <div class="location-pin">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h2>87 Mishaum Point Rd,</h2>
+                                <p class="sub-loc">Dartmouth, MA 02748</p>
+                            </div>
+                        </div>
+                        <p class="featured-desc">
+                            On the best lot at Phuket is situated the Kailua Residence. It features Ipe hardwood
+                            flooring on the interior and granite stone flooring on the lanais, high vaulted cedar
+                            ceilings.
+                        </p>
+                        <ul class="featured-features">
+                            <li><span class="bullet"></span> Quiet Neighbourhood</li>
+                            <li><span class="bullet"></span> Fabulous Views</li>
+                            <li><span class="bullet"></span> Great Local Community</li>
+                            <li><span class="bullet"></span> Large Play Center In Yard</li>
+                        </ul>
+                        <div class="featured-price-row">
+                            <div class="price-tag">$1,249,000</div>
+                            <div class="prop-specs">
+                                <span><i class="fa-solid fa-ruler-combined"></i> 1,286 sqft</span>
+                                <span><i class="fa-solid fa-bed"></i> 2</span>
+                                <span><i class="fa-solid fa-bath"></i> 3</span>
+                                <span><i class="fa-solid fa-warehouse"></i> 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-image">
+                        <img src="images/featured_property_1766992319709.png" alt="Featured Property">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Properties Grid -->
+        <section class="recent-properties-section">
+            <div class="container">
+                <h3 class="section-title">RECENT PROPERTIES</h3>
+                <div class="property-grid">
+                    <!-- Property Card 1 -->
+                    <div class="property-card">
+                        <div class="card-image">
+                            <img src="images/hero_background_1766992267224.png" alt="Property">
+                            <div class="card-overlay">
+                                <span class="card-price">$1,249,000</span>
+                                <div class="card-tag">HOUSE FOR SALE</div>
+                            </div>
+                        </div>
+                        <div class="card-details">
+                            <h4>87 Mishaum Point Rd</h4>
+                            <p class="card-loc">Dartmouth, MA 02748</p>
+                            <div class="card-specs">
+                                <span><i class="fa-solid fa-ruler-combined"></i> 1,286 sqft</span>
+                                <span><i class="fa-solid fa-bed"></i> 2</span>
+                                <span><i class="fa-solid fa-bath"></i> 3</span>
+                                <span><i class="fa-solid fa-warehouse"></i> 2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property Card 2 -->
+                    <div class="property-card">
+                        <div class="card-image">
+                            <img src="images/recent_prop_1_1766992337295.png" alt="Property">
+                            <div class="card-overlay">
+                                <span class="card-price">$2,189,000</span>
+                                <div class="card-tag">TOWNHOUSE FOR SALE</div>
+                            </div>
+                        </div>
+                        <div class="card-details">
+                            <h4>9615 Shore Rd APT BA</h4>
+                            <p class="card-loc">Brooklyn, NY 11209</p>
+                            <div class="card-specs">
+                                <span><i class="fa-solid fa-ruler-combined"></i> 1,286 sqft</span>
+                                <span><i class="fa-solid fa-bed"></i> 2</span>
+                                <span><i class="fa-solid fa-bath"></i> 3</span>
+                                <span><i class="fa-solid fa-warehouse"></i> 3</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property Card 3 -->
+                    <div class="property-card">
+                        <div class="card-image">
+                            <img src="images/recent_prop_2_1766992354985.png" alt="Property">
+                            <div class="card-overlay">
+                                <span class="card-price">$3,449/year</span>
+                                <div class="card-tag">HOUSE FOR RENT</div>
+                            </div>
+                        </div>
+                        <div class="card-details">
+                            <h4>80646 Via Pessaro</h4>
+                            <p class="card-loc">La Quinta, CA 32453</p>
+                            <div class="card-specs">
+                                <span><i class="fa-solid fa-ruler-combined"></i> 886 sqft</span>
+                                <span><i class="fa-solid fa-bed"></i> 2</span>
+                                <span><i class="fa-solid fa-bath"></i> 3</span>
+                                <span><i class="fa-solid fa-warehouse"></i> 2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Services/Features Section -->
+        <section class="services-section">
+            <div class="container">
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="service-icon"><i class="fa-regular fa-star"></i></div>
+                        <h4>Best Property Lists</h4>
+                        <p>We provide consumers with a content-rich listings in a handy format.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"><i class="fa-regular fa-thumbs-up"></i></div>
+                        <h4>Best Price in Market</h4>
+                        <p>Price estimates and sales histories for property, updating information.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"><i class="fa-solid fa-ribbon"></i></div>
+                        <h4>Guaranteed Services</h4>
+                        <p>Our managers will keep you informed and you can act with certainty.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h4>Marketing Research</h4>
+                        <p>All our marketing researchers today have a tough job multitasking.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mobile App Section -->
+        <section class="mobile-app-section">
+            <div class="container">
+                <div class="mobile-app-wrapper">
+                    <div class="mobile-app-text">
+                        <h2>Search Best Deals <span>on Go</span></h2>
+                        <p>The European languages are members of the same family. Their separate existence is a myth.
+                            For science, music, sport, etc, Europe uses the same vocabulary.</p>
+                        <div class="app-buttons">
+                            <button class="app-btn apple">
+                                <i class="fa-brands fa-apple"></i>
+                                <div class="btn-text">
+                                    <span>Available on the</span>
+                                    <strong>App Store</strong>
+                                </div>
+                            </button>
+                            <button class="app-btn google">
+                                <i class="fa-brands fa-google-play"></i>
+                                <div class="btn-text">
+                                    <span>Android app on</span>
+                                    <strong>Google play</strong>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mobile-app-image">
+                        <img src="images/mobile_app_promo_1766992496422.png" alt="Mobile App">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials/Banner Section -->
+        <section class="testimonial-section">
+            <div class="testimonial-overlay"></div>
+            <div class="container testimonial-content">
+                <h2>Thank you so much for your good wishes and for your not insignificant part in our move. You are
+                    stars!</h2>
+                <p class="author">EMMA BENNETT</p>
+                <p class="author-role">48 YEARS</p>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-wrapper">
+                    <div class="newsletter-label">SIGN UP FOR UPDATES</div>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Please, enter you email address.">
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h5>CONTACTS</h5>
+                    <p>We are the leading real estate and rental marketplace dedicated to empowering consumers with
+                        data.</p>
+                    <ul class="contact-list">
+                        <li><i class="fa-solid fa-location-dot"></i> 121 King Street, NY, USA</li>
+                        <li><i class="fa-solid fa-phone"></i> +800 1234 56 78</li>
+                        <li><i class="fa-solid fa-envelope"></i> contact@yoursite.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>FROM THE BLOG</h5>
+                    <div class="blog-item">
+                        <div class="blog-thumb"></div> <!-- Placeholder -->
+                        <div class="blog-meta">
+                            <a href="#">Making the Most of Your Small Space with Furniture</a>
+                            <span>BY JESSE DOE ON MARCH 9, 2016</span>
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div class="blog-thumb"></div>
+                        <div class="blog-meta">
+                            <a href="#">4 Ways to Decorate Your First Apartment on a Budget</a>
+                            <span>BY JESSE DOE ON MARCH 9, 2016</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h5>QUICK LINKS</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">SUPPORT</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">LISTING</a></li>
+                        <li><a href="#">GALLERY</a></li>
+                        <li><a href="#">CONTACTS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>LATEST TWEETS <i class="fa-brands fa-twitter"></i></h5>
+                    <p class="tweet">@axiomthemes For the little ones: bright and colorful, modern and professional
+                        #ecommerce #WP #site #template White Rabbit! themeforest.net/item/white-rab...</p>
+                    <p class="tweet">@axiomthemes We continue #summer #sports and #tournaments topic! Check out Soccer
+                        Club #WordPress theme by Axiom: themeforest.net/item/soccer-cl...</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="company-brand">
+                    <div class="logo">
+                        <i class="fa-solid fa-building"></i>
+                        <div class="logo-text">
+                            <span>ESTATE</span>
+                            <span class="logo-sub">YOUR REAL ESTATE GUIDE</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="company-about">
+                    <h5>ABOUT US</h5>
+                    <p>We are the leading real estate and rental marketplace dedicated to empowering consumers with
+                        data, inspiration and knowledge around the place they call home, and connecting them with the
+                        best local professionals who can help.</p>
+                </div>
+                <div class="social-links">
+                    <h5>FOLLOW US</h5>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-solid fa-plus"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="copyright-row">
+                <p>ESTATE © 2016 All Rights Reserved</p>
+                <div class="footer-nav">
+                    <a href="#">Disclaimer</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Advertisement</a>
+                    <a href="#">Contact us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
